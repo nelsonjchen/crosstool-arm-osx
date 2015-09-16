@@ -104,6 +104,7 @@ function buildCrosstool()
 	--with-libtool=$BrewHome/bin/glibtool        \
 	--with-libtoolize=$BrewHome/bin/glibtoolize  \
 	--with-sed=$BrewHome/bin/gsed                \
+	--with-grep=$BrewHome/bin/ggrep              \
 	--with-awk=$BrewHome/bin/gawk                \
 	--with-automake=$BrewHome/bin/automake       \
 	--with-bash=$BrewHome/bin/bash               \

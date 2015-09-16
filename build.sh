@@ -35,7 +35,7 @@ set -e -u
 #
 InstallBase=`pwd`
 BrewHome=/brew2/local
-BrewTools="gnu-sed binutils gawk automake libtool bash"
+BrewTools="gnu-sed binutils gawk automake libtool bash gcc"
 BrewToolsExtra="https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb"
 ImageName=CrossTool2NG
 ImageNameExt=${ImageName}.sparseimage

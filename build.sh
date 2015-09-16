@@ -4,7 +4,7 @@
 #
 #  Installs a gcc cross compiler for compiling code for raspberry pi on OSX.
 #  This script is based on several scripts and forum posts I've found around
-#  the web, the most significant being: 
+#  the web, the most significant being:
 #
 #  http://okertanov.github.com/2012/12/24/osx-crosstool-ng/
 #  http://crosstool-ng.org/hg/crosstool-ng/file/715b711da3ab/docs/MacOS-X.txt
@@ -43,7 +43,7 @@ CrossToolVersion=crosstool-ng-1.20.0
 ToolChainName=arm-unknown-linux-gnueabi
 
 #
-# If $BrewHome does not alread contain HomeBrew, download and install it. 
+# If $BrewHome does not alread contain HomeBrew, download and install it.
 # Install the required HomeBrew packages.
 #
 function buildBrewDepends()
@@ -136,7 +136,7 @@ function createToolchain()
     echo "        Unselect 'Debugging -> dmalloc or fix its build'"
 
     # Use 'menuconfig' target for the fine tuning.
-    PATH=$BrewHome/bin:$PATH ../${CrossToolVersion}/ct-ng menuconfig
+    # PATH=$BrewHome/bin:$PATH ../${CrossToolVersion}/ct-ng menuconfig
 }
 
 function buildToolchain()

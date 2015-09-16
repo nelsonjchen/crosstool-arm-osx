@@ -137,8 +137,8 @@ function createToolchain()
     echo "        Unselect 'Debugging -> dmalloc or fix its build'"
 
     # Use 'menuconfig' target for the fine tuning.
-    PATH=$BrewHome/bin:$PATH ../${CrossToolVersion}/ct-ng menuconfig
-
+    #PATH=$BrewHome/bin:$PATH ../${CrossToolVersion}/ct-ng menuconfig
+}
 
 function buildToolchain()
 {

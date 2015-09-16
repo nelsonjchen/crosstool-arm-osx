@@ -39,7 +39,7 @@ BrewTools="gnu-sed binutils gawk automake libtool bash"
 BrewToolsExtra="https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb"
 ImageName=CrossTool2NG
 ImageNameExt=${ImageName}.sparseimage
-CrossToolVersion=crosstool-ng-1.20.0
+CrossToolVersion=crosstool-ng-1.21.0
 ToolChainName=arm-unknown-linux-gnueabi
 
 #
@@ -137,8 +137,8 @@ function createToolchain()
     echo "        Unselect 'Debugging -> dmalloc or fix its build'"
 
     # Use 'menuconfig' target for the fine tuning.
-    # PATH=$BrewHome/bin:$PATH ../${CrossToolVersion}/ct-ng menuconfig
-}
+    PATH=$BrewHome/bin:$PATH ../${CrossToolVersion}/ct-ng menuconfig
+
 
 function buildToolchain()
 {

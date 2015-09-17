@@ -35,7 +35,7 @@ set -e -u
 #
 InstallBase=`pwd`
 BrewHome=/brew2/local
-BrewTools="gnu-sed binutils gawk automake libtool bash"
+BrewTools="gnu-sed binutils gawk automake libtool bash gcc"
 BrewToolsExtra="https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb"
 ImageName=CrossTool2NG
 ImageNameExt=${ImageName}.sparseimage
@@ -60,7 +60,6 @@ function buildBrewDepends()
     $BrewHome/bin/brew upgrade
     set +e
     $BrewHome/bin/brew install $BrewTools && true
-    $BrewHome/bin/brew install gcc --without-fortran --without-multilib && true
     $BrewHome/bin/brew install $BrewToolsExtra && true
     set -e
 }

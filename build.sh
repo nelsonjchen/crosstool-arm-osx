@@ -34,7 +34,7 @@ set -e -u
 # Config. Update here to suite your specific needs. I've
 #
 InstallBase=`pwd`
-BrewHome=/brew2/local
+BrewHome=/usr/local
 BrewTools="gnu-sed binutils gawk automake libtool bash gcc"
 BrewToolsExtra="https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb"
 ImageName=CrossTool2NG
